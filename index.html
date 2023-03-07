@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Chen-Pin-Chu,作品集,portfolio,Joy,APP,RWD,UI,UX,WROKS,">
+        <meta name="description" content="CHEN的作品集網站">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Joy, joy7894561230852@gmail.com">
+        <!-- 分享連結抓取圖片 -->
+        <meta property="og:image" content="img/home/shareimg.jpg">
+        <meta property="og:image:type" content="img/home/shareimg.jpg">
+        <title>Chen Pin Chu</title>
+        
+        <!--網路字型-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap">
+        <!-- title小圖示 -->
+        <link rel="icon" href="img/logo/logo_small.svg">
+        <!-- apple-touch-icon -->
+        <link rel="apple-touch-icon" href="img/logo/logo_medium.svg">
+        <!-- 網路icon -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- css宣告 -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/basic.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- 媒體查詢CSS -->
+        <link rel="stylesheet" href="css/style_m.css" media="(min-width:960px) and (max-width:1170px)">
+        <link rel="stylesheet" href="css/style_s.css" media="(max-width:959px)">
+        <!-- 共用JQ -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- 作品0102輪播圖js -->
+        <script src="js/slide.min.js"></script>
+        <script src="js/slide.js"></script>
+</head>
+<body>
+    <header>
+        <div id="wrap">
+            <a href="#"><h1>
+                <img src="img/logo/logo_medium.svg" alt="Chen-Pin-Chu">
+                <img src="img/logo/CPC_word.png" alt="Chen-Pin-Chu">
+                <span>Chen-Pin-Chu</span>
+            </h1></a>
+
+            <div id="menu"></div>
+        </div>
+    </header>
+
+    <picture id="home_bg">
+        <source srcset="img/home/cover_m.png" media="(min-width:960px) and (max-width:1170px)">
+        <source srcset="img/home/cover_s.png" media="(max-width:959px)">
+        <img src="img/home/cover.png" alt="Chen-Pin-Chu">
+    </picture>
+    <div id="home" class="main_content">
+        <ul>
+            <ol><a href="index.html">首頁</a></ol>
+            <ol><a href="#about">關於</a></ol>
+            <ol><a href="works_UI.html">作品</a></ol>
+            <ol><a href="#contact">聯絡</a></ol>
+        </ul>
+
+        <div id="hello" class="text_white">
+            <h1 class="text_bold">HELLO</h1>
+            <p>I am PIN-CHU <br> welcome to my website</p>
+        </div>
+
+        <small id="scroll" class="text_white">scroll</small>
+    </div>
+
+    <div id="about" class="main_content">
+        <div class="title">
+            <h1>ABOUT</h1>
+            <div class="line"></div>
+            <p>有關於我，Chen Pin Chu</p>
+        </div>
+
+        <div class="intro">
+            <picture class="into_img">
+                <source srcset="img/about/myself_s.jpg" media="(max-width:810px)">
+                <img src="img/about/myself.jpg" alt="陳品竹">
+            </picture>
+            <div class="intro_txt">
+                <h4>Designer</h4>
+                <p>陳品竹</p>
+                <p>大學專攻媒傳設計，善於在業主方與使用者之間取得美感平衡。<br><br>除了視覺設計之外，為了擴展自己的學習維度，未來將學習前端與後端課程。<br><br>目標是打造工程、設計、心理三方領域都符合受眾需求、UIUX並蓄的媒介。 </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="works_01">
+        <div class="title">
+            <h1><span>WO</span><span>RKS</span></h1>
+            <div class="line"></div>
+            <p>作品&nbsp;01&nbsp;&emsp;/&nbsp;&emsp;UI設計</p>
+        </div>
+
+        <div class="works_UI">
+            <div class="UI_wrap">
+                <table class="UI_txt">
+                    <tr class="img_btn" onclick="changephoto1()">
+                        <td>Joy accessory</td>
+                        <td>飾品購物網站、APP</td>
+                        <td><i class="material-icons text_lgray">navigate_next</i></td>
+                    </tr>
+                    <tr class="img_btn" onclick="changephoto5()">
+                        <td>Renaissance</td>
+                        <td>藝術史介紹網站</td>
+                        <td><i class="material-icons text_lgray">navigate_next</i></td>
+                    </tr>
+                    <tr class="img_btn highlight_main" onclick="changephoto4()">
+                        <td>好，甜點</td>
+                        <td>甜點商店官網</td>
+                        <td><i class="material-icons text_lgray">navigate_next</i></td>
+                    </tr>
+                    <tr class="img_btn" onclick="changephoto2()">
+                        <td>在家運動</td>
+                        <td>運動減肥健身APP</td>
+                        <td><i class="material-icons text_lgray">navigate_next</i></td>
+                    </tr>
+                    <tr class="img_btn" onclick="changephoto3()">
+                        <td>TOLIN</td>
+                        <td>百貨公司APP</td>
+                        <td><i class="material-icons text_lgray">navigate_next</i></td>
+                    </tr>
+                </table>
+                <a href="works_UI.html"><small>view more<i class="triangle"></i></small></a>
+            </div>
+
+            <div class="UI_img">
+                <a href="works_UI.html"><img src="img/UI/dessert.jpg" alt="UI設計" id="change-img"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="works_02">
+        <div class="works_02_wrap">
+            <div class="title">
+                <div class="wrap">
+                    <p>作品&nbsp;02&nbsp;&emsp;/&nbsp;&emsp;平面設計</p>
+                    <div class="line"></div>
+                </div>
+                <h1>WORKS</h1>
+            </div>
+            <div class="more">
+                <a href="works_graphic.html"><small>view more<i class="triangle"></i></small></a>
+            </div>
+        </div>
+        <div class="works_02_wrap02">
+            <div class="title">
+                <h1>WORKS</h1>
+                <p>作品&nbsp;02&nbsp;&emsp;/&nbsp;&emsp;平面設計</p>
+            </div>
+            <div class="more">
+                <a href="works_graphic.html"><small>view more<i class="triangle"></i></small></a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div id="slide3d" class="slide-carousel slide-3d">
+                <ul  class="item-list clearfix">
+                  <li class="item0">
+                    <div class="item-content"> <a href="javascript:void(0);"> <img class="cover-img" src="img/works_graphic/phonecase/phonecase_universe.jpg" alt="宇宙系列手機殼設計"></a><h6>太空系列</h6><p>透過多樣化主題，設計系列手機殼。「太空」，龐大的空間；承載希望，時而淘氣、時而迷幻。</p></div>
+                  </li>
+                  <li class="item1">
+                    <div class="item-content"> <a href="javascript:void(0);"> <img class="cover-img" src="img/works_graphic/3C/zflilp.jpg" alt="摺疊機保護貼宣傳圖設計"></a><h6>手機保護貼</h6><p>摺疊手機保護貼文宣；以生活美學為概念設計，表達手機黏貼保護貼後，亦可成為生活裝飾的一部分。</p></div>
+                  </li>
+                  <li class="item2">
+                    <div class="item-content"> <a href="javascript:void(0);"> <img class="cover-img" src="img/works_graphic/other/starcom.jpg" alt="望星空書籍封面設計"></a><h6>望星空</h6><p>書籍封面設計，以星空水彩畫作為基底，呈現一個人望向星空的主視覺；書名設計特意使用白色打凸效果，使文字能在白底上凸顯出來。</p></div>
+                  </li>
+                  <li class="item3">
+                    <div class="item-content"> <a href="javascript:void(0);"> <img class="cover-img" src="img/works_graphic/literature/music_04.jpg" alt="藝文講座文宣設計"></a><h6>藝文講座文宣</h6><p>為藝文講座設計宣傳DM、網頁Banner、刊物廣告。</p></div>
+                  </li>
+                  <li class="item4">
+                    <div class="item-content"> <a href="javascript:void(0);"> <img class="cover-img" src="img/works_graphic/other/hskin.jpg" alt="保養品文宣設計"></a><h6>保養品文宣</h6>為保養品設計宣傳DM、網頁Banner、刊物廣告。</div>
+                  </li>
+                  <li class="item5">
+                    <div class="item-content"> <a href="javascript:void(0);"> <img class="cover-img" src="img/works_graphic/3C/fb_rog.jpg" alt="電競手機保護貼宣傳圖設計"></a><h6>電競手機保護貼</h6><p>電競手機保護貼文宣；以電競風格為基礎設計，表達保護貼清晰透明，不影響使用者視線。</p></div>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="works_03" class="main_content">
+        <div class="title">
+            <h1>WORKS</h1>
+            <div class="line"></div>
+            <p>作品&nbsp;03&nbsp;&emsp;/&nbsp;&emsp;品牌設計</p>
+        </div>
+
+        <div class="works_brand">
+            <div class="brand_txt">
+                <h4>BAMBOO</h4>
+                <h6>竹．取其為名、以其樹立。</h6>
+                <p>地球的狀態每況愈下，環保意識逐漸抬頭。因為在乎地球生態，所以環保作為品牌概念的出發點。品牌名稱「竹」不僅代表自然中零污染的材質，也是取設計師當中名字的一個字。</p>
+                <a href="works_brand.html"><small>view more<i class="triangle"></i></small></a>
+            </div>
+
+            <div class="banner">
+                <div id="slide2d" class="slide-carousel slide-2d" >
+                    <ul  class="item-list clearfix">
+                    <li class="item0">
+                        <div class="item-content"> <a href="javascript:void(0);">
+                            <picture class="cover-img">
+                                <source srcset="img/works_brand/penbox_s.jpg" media="(max-width:580px)">
+                                <img src="img/works_brand/penbox.jpg" alt="鉛筆袋"> 
+                            </picture>
+                        </a> </div>
+                    </li>
+                    <li class="item1">
+                        <div class="item-content"> <a href="javascript:void(0);">
+                            <picture class="cover-img">
+                                <source srcset="img/works_brand/eat_s.jpg" media="(max-width:580px)">
+                                <img src="img/works_brand/eat.jpg" alt="餐具組">
+                            </picture>
+                        </a> </div>
+                    </li>
+                    <li class="item2">
+                        <div class="item-content"> <a href="javascript:void(0);">
+                            <picture class="cover-img">
+                                <source srcset="img/works_brand/bag_s.jpg" media="(max-width:580px)">
+                                <img src="img/works_brand/bag_2.jpg" alt="帆布袋"> 
+                            </picture>
+                        </a></div>
+                    </li>
+                    <li class="item3">
+                        <div class="item-content"> <a href="javascript:void(0);">
+                            <picture class="cover-img">
+                                <source srcset="img/works_brand/coin_s.jpg" media="(max-width:580px)">
+                                <img src="img/works_brand/coin.jpg" alt="零錢包">
+                            </picture>
+                        </a> </div>
+                    </li>
+                    <li class="item4">
+                        <div class="item-content"> <a href="javascript:void(0);">
+                            <picture class="cover-img">
+                                <source srcset="img/works_brand/note_s.jpg" media="(max-width:580px)">
+                                <img src="img/works_brand/note_2.jpg" alt="筆記本">
+                            </picture>
+                        </a> </div>
+                    </li>
+                    </ul>
+                    <!--indicators-->
+                    <div class="indicator-list"> <a href="javascript:void(0);" data-slide-index="0" class="selected"></a> <a href="javascript:void(0);" data-slide-index="1"></a> <a href="javascript:void(0);" data-slide-index="2"></a> <a href="javascript:void(0);" data-slide-index="3"></a> <a href="javascript:void(0);" data-slide-index="4"></a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="main_content">
+        <div class="contact_wrap">
+            <div class="title_contact">
+                <h1>CONTACT</h1>
+                <div class="wrap">
+                    <div class="line"></div>
+                    <p>如何聯繫我</p>
+                </div>
+            </div>
+
+            <div class="intro">
+                <p>陳品竹&emsp;Chen Pin Chu</p>
+                <p>E-mail&emsp;|&emsp;joy7894561230852@gmail.com</p>
+            </div>
+        </div>
+        <img src="img/contact/backgroundimage.jpg" alt="backgroundimage">
+    </div>
+
+    <footer>
+        <p class="text_white mini">©&nbsp;&nbsp;Copyright Chen Pin Chu.  All rights reserved.</p>
+    </footer>
+
+    <!-- 彈出式選單版面 -->
+    <div id="nav">
+        <div id="header">
+            <div id="wrap">
+                <a href="index.html"><h1>
+                    <img src="img/logo/logo_medium_white.svg" alt="Chen-Pin-Chu">
+                    <img src="img/logo/CPC_word_white.png" alt="Chen-Pin-Chu">
+                </h1></a>
+
+                <div class="clear_wrap">
+                    <div id="menu_clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <ul id="menu_txt" class="h4">
+            <ol>
+                <a href="index.html" class="text_white" id="a_home">
+                    <span class="normal text_dgray">01</span><span>首頁</span>
+                    <span class="triangle"></span>
+                </a>
+            </ol>
+            <ol>
+                <a href="#about" class="text_white" id="a_about">
+                    <span class="normal text_dgray">02</span><span>關於</span>
+                    <span class="triangle"></span>
+                </a>
+            </ol>
+            <ol>
+                <a href="works_UI.html" class="text_white">
+                    <span class="normal text_dgray">03</span><span>作品</span>
+                    <span class="triangle"></span>
+                </a>
+            </ol>
+            <ol>
+                <a href="#contact" class="text_white" id="a_contact">
+                    <span class="normal text_dgray">04</span><span>聯絡</span>
+                    </span><span class="triangle"></span>
+                </a>
+            </ol>
+        </ul>
+
+        <div id="card" class="text_white">
+            <p><span>陳品竹</span>&emsp;<span>Chen Pin Chu</span></p>
+            <p><span class="mail">Email</span>&emsp;|&emsp;<span>joy7894561230852@gmail.com</span></p>
+            <p>©&nbsp;&nbsp;Copyright Chen Pin Chu.  All rights reserved.</p>
+        </div>
+    </div>
+    
+    <!-- 作品03輪播圖js -->
+    <script src="js/changephoto.js"></script>
+    <!-- 點擊觸發漢堡選單js -->
+    <script src="js/click.js"></script>
+</body>
+</html>

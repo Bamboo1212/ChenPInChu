@@ -1,0 +1,149 @@
+:root{
+    /* 顏色定義 */
+    --black: #000000;
+    --white: #FFFFFF;
+    --green: #86A945;
+    --lgreen: #4E878C;
+    --bgyellow: #F5F4ED;
+    --bggreen: #F2F7F4;
+    --lgray: #CECECE;
+    --dgray: #848484;
+
+    /* 文字尺寸定義 */
+    --h1: 70px;
+    --h2: 30px;
+    --h3: 28px;
+    --h4: 26px;
+    --h5: 22px;
+    --h6: 20px;
+    --normal: 16px;
+    --small: 14px;
+    --mini: 13px;
+}
+
+/* 基本元素設定 */
+html, body{
+    font-family: 'Noto Serif TC', serif;
+    color: var(--black);
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+a:link, a:visited{
+    color: var(--black);
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover, a:active{
+    color: var(--lgreen);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*常用樣式設定*/
+h1{
+    font-size: var(--h1);
+    font-weight: 400;
+    line-height: 101px;
+}
+h4{
+    font-size: var(--h4);
+    font-weight: 700;
+    line-height: 41.9px;
+}
+h5{
+    font-size: var(--h5);
+    font-weight: 500;
+    line-height: 35.4px;
+}
+h6{
+    font-size: var(--h6);
+    font-weight: 400;
+    line-height: 32.2px;
+}
+p{
+    font-size: var(--normal);
+    font-weight: 400;
+    line-height: 25.8px;
+}
+small{
+    font-size: var(--small);
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+
+.main_content{
+    width: calc(100% - 12.5vw * 2);
+    margin: auto;
+}
+.title{
+    margin-left: 6.3%;
+    display: flex;
+    align-items: center;
+}
+.line{
+    display: block;
+    width: 168px;
+    height: 0.04rem;
+    background-color: var(--black);
+    margin: 0 15px 0 25px;
+}
+.triangle{
+    display: inline-block;
+    height: 0.04rem;
+    width: 75px;
+    background-color: var(--black);
+    margin-left: 10px;
+    transform: translateY(-4px);
+    position: relative;
+}
+.triangle::after{
+    content: '';
+    display: inline-block;
+    border-top: 8px solid var(--black);
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    position: absolute;
+    left: 75px;
+    top: -0.21rem;
+    transform: rotate(-90deg);
+}
+.h4{
+    font-size: var(--h4);
+    font-weight: 700;
+    line-height: 41.9px;
+}
+.normal{
+    font-size: var(--normal);
+    font-weight: 400;
+    line-height: 25.8px;
+}
+.mini{
+    font-size: var(--mini);
+    font-weight: 400;
+    line-height: 20.9px;
+}
+.highlight_main{ 
+    color: var(--green) !important;
+}
+.highlight_sub{
+    border-bottom: 0.04rem solid var(--green);
+    color: var(--green) !important;
+}
+.text_bold{
+    font-weight: 700;
+}
+.text_white{
+    color: var(--white) !important;
+}
+.text_dgray{
+    color: var(--dgray);
+}
+.text_lgray{
+    color: var(--lgray);
+}

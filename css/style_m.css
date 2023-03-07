@@ -1,0 +1,163 @@
+/*----------header----------*/
+header{
+    width: calc(100% - 7.5vw);
+    height: auto;
+    border-right: 0;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header #wrap{
+    width: 100%;
+    left: 0;
+    transform: translateX(0%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header #wrap h1 img:nth-child(1){
+    width: 55px;
+}
+header #wrap h1 img:nth-child(2){
+    width: 40px;
+}
+header #wrap #menu{
+    margin-top: 0;
+    transform: translateX(0);
+}
+
+
+/*----------home內容----------*/
+#home{
+    min-height: calc(100vh - 120px);
+    top: 15px;
+}
+#home ul{
+    display: none;
+}
+#home #hello{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#home #hello p{
+    margin-left: 20px;
+}
+#home #scroll{
+    transform: rotate(90deg) translate(-55px, 110px);
+}
+
+
+/*----------About內容----------*/
+#about .title{
+    margin-left: 4.3%;
+}
+#about .intro{
+    flex-direction: column;
+}
+#about .intro .into_img{
+    width: 100%;
+}
+#about .intro .intro_txt{
+    width: 100%;
+    margin: 30px 0 0 0;
+}
+#about .intro .intro_txt p br:nth-child(odd){
+    display: none;
+}
+#about .intro .intro_txt p:nth-child(2){
+    margin-top: 30px;
+}
+#about .intro .intro_txt p:nth-child(3){
+    margin-top: 15px;
+}
+
+
+/*----------Works內容----------*/
+/* -----Works_01 */
+#works_01 .works_UI{
+    flex-direction: column-reverse;
+    margin-top: 40px;
+}
+#works_01 .works_UI .UI_wrap{
+    width: 760px;
+    margin-top: 30px;
+}
+#works_01 .works_UI .UI_img{
+    width: 100%;
+}
+
+#works_01 .works_UI .UI_wrap .UI_txt tbody{
+    display: flex;
+    flex-wrap: wrap;
+}
+#works_01 .works_UI .UI_wrap .UI_txt tr{
+    width: 365px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0;
+    border-bottom: 0.03rem solid var(--lgray);
+}
+#works_01 .works_UI .UI_wrap .UI_txt tr td:nth-child(1){
+    width: 105px;
+}
+#works_01 .works_UI .UI_wrap .UI_txt tr td:nth-child(2){
+    width: 145px;
+}
+#works_01 .works_UI .UI_wrap .UI_txt tr:nth-child(even){
+    margin-left: 30px;
+}
+
+
+/*----------Works內容----------*/
+/* -----Works_02 */
+#works_02{
+    margin: 150px 50% 150px;
+}
+
+
+/*----------彈出menu----------*/
+#nav #header{
+    width: calc(100% - 9.5vw);
+    height: auto;
+    border-right: 0;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#nav #header #wrap{
+    width: 100%;
+    left: 0;
+    transform: translateX(0%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav #header #wrap h1 img:nth-child(1){
+    width: 55px;
+}
+#nav #header #wrap h1 img:nth-child(2){
+    width: 40px;
+}
+#nav #header #wrap .clear_wrap{
+    margin-top: 0;
+    transform: translateX(30%);
+}
+
+#nav #card{
+    left: 50%;
+}
+
+
+/* ----------Works_brand Page---------- */
+#works .title{
+    margin-left: 4.3%;
+}
+#works ul{
+    display: none;
+}
+#content #sub_nav{
+    margin-left: 4.3%;
+}

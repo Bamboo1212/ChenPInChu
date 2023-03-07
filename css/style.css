@@ -1,0 +1,773 @@
+/*----------header----------*/
+header{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12.5vw;
+    height: calc(100vh - 120px);
+    border-right: 0.03rem solid var(--black);
+    z-index: 99;
+}
+header #wrap{
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header #wrap h1 span{
+    display: none;
+}
+header #wrap h1 img{
+    display: block;
+}
+header #wrap h1 img:nth-child(1){
+    width: 60px;
+}
+header #wrap h1 img:nth-child(2){
+    width: 41px;
+}
+header #wrap h1 img:nth-child(2){
+    margin-top: 10px;
+}
+header #wrap #menu{
+    width: 40px;
+    height: 14px;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    margin-top: 190px;
+    transform: translateX(25%);
+    cursor: pointer;
+}
+header #wrap #menu:hover,
+header #wrap #menu:active{
+    border-top: 1px solid var(--lgreen);
+    border-bottom: 1px solid var(--lgreen);
+}
+
+
+/*----------home內容----------*/
+#home_bg{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: var(--white);
+}
+#home_bg img, #home_bg source{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 60%;
+}
+#home{
+    min-height: calc(100vh - 130px);
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#home ul{
+    float: right;
+}
+#home ul ol{
+    float: left;
+    margin-left: 60px;
+    position: relative;
+    z-index: 2;
+}
+#home ul ol a{
+    color: var(--white);
+}
+/* -----hover----- */
+#home ul ol:hover a,
+#home ul ol:active a{
+    color: var(--green);
+}
+
+#hello{
+    margin-left: 44px;
+    position: relative;
+}
+
+#scroll{
+    position: absolute;
+    bottom: 0;
+    transform: rotate(90deg) translateX(-55px);
+}
+#scroll:before{
+    content: '';
+    display: block;
+    width: 135px;
+    height: 1px;
+    background-color: var(--white);
+    border-radius: 50px;
+}
+#scroll:after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: var(--white);
+    transform: translate(121px, -1.703rem) rotate(30deg);
+    border-radius: 50px;
+}
+
+
+/*----------About內容----------*/
+#about{
+    margin-top: 150px;
+    position: relative;
+}
+#about::before{
+    content: url('../img/about/mountain.png');
+    position: absolute;
+    top: -30px;
+    right: calc(-12.5vw - 2px);
+}
+
+#about .intro{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+#about .intro:before{
+    content: '';
+    position: absolute;
+    top: 98px;
+    right: -12.5vw;
+    width: 71%;
+    height: 210px;
+    background-color: var(--bgyellow);
+    z-index: -10;
+}
+
+#about .intro .into_img{
+    width: 76%;
+    height: 445px;
+    background-color: white;
+}
+#about .intro .into_img img{
+    width: 100%;
+    height: 445px;
+    object-fit: cover;
+    object-position: bottom;
+    position: relative;
+}
+
+#about .intro .intro_txt{
+    width: 16%;
+    margin: 90px 0 0 0;
+}
+#about  .intro .intro_txt p:nth-child(2){
+    margin-top: 50px;
+}
+
+#about  .intro .intro_txt p:nth-child(3){
+    margin-top: 30px;
+}
+
+
+
+/* -----hover----- */
+a:hover .triangle,
+a:active .triangle{
+    background-color: var(--lgreen);
+
+}
+a:hover .triangle::after,
+a:active .triangle::after{
+    border-top: 8px solid var(--lgreen);
+}
+
+
+/*----------Works內容----------*/
+/* -----Works_01 */
+#works_01{
+    margin-top: 150px;
+    width: 82.29%;
+    float: right;
+}
+#works_01 .title{
+    margin-left: 0;
+}
+#works_01 .title h1{
+    transform: rotate(90deg);
+    display: flex;
+    flex-direction: column;
+}
+#works_01 .title h1 span:nth-child(2){
+    margin-top: -30px;
+}
+#works_01 .title div,
+#works_01 .title p{
+    transform: translateY(25px);
+}
+
+#works_01 .works_UI{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#works_01 .works_UI .UI_wrap{
+    width: 30%;
+}
+#works_01 .works_UI .UI_wrap .UI_txt tr{
+    border-top: 0.03rem solid var(--lgray);
+    cursor: pointer;
+}
+#works_01 .works_UI .UI_wrap .UI_txt tr:nth-last-child(1){
+    border-bottom: 0.03rem solid var(--lgray);
+}
+#works_01 .works_UI .UI_wrap .UI_txt tr td:nth-child(2){
+    padding: 22px 25px 22px 50px;
+}
+#works_01 .works_UI .UI_wrap a{
+    display: block;
+    margin-top: 30px;
+}
+/* -----hover----- */
+#works_01 .works_UI .UI_wrap .UI_txt tr:hover{
+    color: var(--lgreen);
+}
+
+#works_01 .works_UI .UI_img{
+    width: 64.5%;
+    overflow: hidden;
+    background-color: var(--white);
+}
+#works_01 .works_UI .UI_img img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+
+/*----------Works內容----------*/
+/* -----Works_02 */
+#works_02{
+    clear: both;
+    float: right;
+    margin: 150px 50% 220px;
+    width: 83.4%;
+    transform: translateX(50%);
+}
+#works_02 .works_02_wrap02{
+    display: none;
+}
+#works_02 .works_02_wrap{
+    width: 100%;
+    float: right;
+}
+#works_02 .works_02_wrap .title{
+    justify-content: end;
+}
+#works_02 .works_02_wrap .title .wrap{
+    display: flex;
+    align-items: center;
+}
+#works_02 .works_02_wrap .more{
+    margin-top: 15px;
+    float: right;
+    transform: translateX(-8px);
+}
+
+#works_02 .banner{
+    clear: both;
+    width: 98.6%;
+    height: 555px;
+    margin: auto;
+    position: relative;
+    top: 40px;
+}
+#works_02 .banner .slide-3d .item-list li {
+    width: 33.6%;
+    height: 555px;
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: var(--white);
+    overflow: hidden;
+}
+#works_02 .banner .slide-3d .item-list li .item-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#works_02 .banner .slide-3d .item-list li img{
+    width: 100%;
+    height: 100%;
+}
+#works_02 .banner .slide-3d .item-list li .item-content h6{
+    margin-top: 20px;
+}
+#works_02 .banner .slide-3d .item-list li .item-content p{
+    margin-top: 5px;
+}
+#works_02 .banner .slide-3d .item-list li.item0 {
+    transform: translate3d(-100%, 0, 0) scale(0.85);
+}
+#works_02 .banner .slide-3d .item-list li.item1 {
+    transform: translate3d(0, 0, 0) scale(0.85);
+    transform-origin: 0 50%;
+    opacity: .4;
+    z-index: 2;
+}
+#works_02 .banner .slide-3d .item-list li.item2 {
+    transform: translate3d(100%, 0, 0) scale(1);
+    transform-origin: 50% 50%;
+    opacity: 1;
+    z-index: 3;
+}
+#works_02 .banner .slide-3d .item-list li.item3 {
+    transform: translate3d(200%, 0, 0) scale(0.85);
+    transform-origin: 100% 50%;
+    opacity: .4;
+    z-index: 2;
+}
+#works_02 .banner .slide-3d .item-list li.item4 {
+    transform: translate3d(300%, 0, 0) scale(0.85);
+}
+#works_02 .banner .slide-3d .item-list li.item5 {
+    transform: translate3d(100%, 0, 0) scale(0.85);
+}
+#works_02 .banner .slide-3d .item-list li.item6 {
+    transform: translate3d(500%, 0, 0) scale(0.85);
+}
+
+
+/*----------Works內容----------*/
+/* -----Works_03 */
+#works_03{
+    clear: both;
+    margin-top: 150px;
+    position: relative;
+}
+#works_03 .works_brand{
+    margin: 35px 0 0 6.3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#works_03 .works_brand:before{
+    content: '';
+    position: absolute;
+    top: 250px;
+    left: -12.5vw;
+    width: 82.8%;
+    height: 370px;
+    background-color: var(--bggreen);
+    z-index: -10;
+}
+#works_03 .works_brand .brand_txt{
+    width: 37.75%;
+}
+#works_03 .works_brand .brand_txt h6{
+    margin-top: 40px;
+}
+#works_03 .works_brand .brand_txt p{
+    margin-top: 25px;
+}
+#works_03 .works_brand .brand_txt a{
+    display: block;
+    margin-top: 20px;
+}
+
+#works_03 .works_brand .banner{
+    width: 60%;
+    height: 420px;
+    margin: 0;
+    position: relative;
+    right: -7%;
+    overflow: hidden;
+    background-color: transparent;
+}
+#works_03 .works_brand .banner .slide-2d .item-list li {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#works_03 .works_brand .banner li source,
+#works_03 .works_brand .banner li img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center center;
+}
+#works_03 .works_brand .banner .slide-2d .item-list li.item0 {
+  transform: translateX(-100%);
+}
+#works_03 .works_brand .banner .slide-2d .item-list li.item1 {
+  transform: translateX(0px);
+}
+#works_03 .works_brand .banner .slide-2d .item-list li.item2 {
+  transform: translateX(100%);
+}
+#works_03 .works_brand .banner .slide-2d .item-list li.item3 {
+  transform: translateX(200%);
+}
+#works_03 .works_brand .banner .slide-2d .item-list li.item4 {
+  transform: translateX(300%);
+}
+#works_03 .works_brand .banner .slide-2d .item-list li.item5 {
+  transform: translateX(400%);
+}
+#works_03 .works_brand .banner .slide-carousel .indicator-list{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+#works_03 .works_brand .banner .slide-carousel .indicator-list a{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ccc;
+    opacity: .5;
+    margin-left: 15px;
+}
+#works_03 .works_brand .banner .slide-carousel .indicator-list a.selected{
+    background-color: var(--green);
+    opacity: 1;
+}
+
+
+/*----------Contact內容----------*/
+#contact{
+    clear: both;
+    float: right;
+    height: 200px;
+    position: relative;
+    top: 220px;
+    margin: 0;
+    border-top: 0.03rem solid var(--black);
+    cursor: pointer;
+}
+#contact .contact_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(25%);
+}
+#contact .contact_wrap .title_contact{
+    display: flex;
+    flex-direction: column;
+}
+#contact .contact_wrap .title_contact .wrap{
+    display: flex;
+    align-items: center;
+    transform: translateX(116px);
+}
+
+#contact .contact_wrap .intro{
+    float: right;
+    margin-left: 16.25%;
+}
+#contact .contact_wrap .intro p:nth-child(2){
+    margin-top: 15px;
+}
+#contact img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -99;
+    opacity: 0;
+}
+
+#contact:hover,
+#contact:active{
+    color: var(--white);
+}
+#contact:hover .contact_wrap .title_contact .wrap .line,
+#contact:active .contact_wrap .title_contact .wrap .line{
+    background-color: var(--white);
+}
+#contact:hover img,
+#contact:active img{
+    opacity: 1;
+    transition: 1s ease;
+}
+
+
+/*----------footer內容----------*/
+footer{
+    clear: both;
+    width: 100%;
+    height: 40px;
+    background-color: var(--black);
+    transform: translateY(220px);
+    position: relative;
+}
+footer p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*----------彈出menu----------*/
+#nav{
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+
+#nav #header{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12.5vw;
+    height: calc(100vh - 120px);
+    border-right: 0.03rem solid var(--white);
+    z-index: 99;
+}
+#nav #header #wrap{
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#nav #header #wrap a{
+    cursor: pointer;
+}
+#nav #header #wrap h1 img{
+    display: block;
+}
+#nav #header #wrap h1 img:nth-child(1){
+    width: 60px;
+}
+#nav #header #wrap h1 img:nth-child(2){
+    margin-top: 10px;
+}
+
+#nav #header #wrap .clear_wrap{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    margin-top: 180px;
+    transform: translateX(20%);
+    cursor: pointer;
+}
+#nav #header #wrap #menu_clear{
+    width: 40px;
+    height: 0.03rem;
+    background-color: transparent;
+}
+#nav #header #wrap #menu_clear::before,
+#nav #header #wrap #menu_clear::after{
+    content: '';
+    display: block;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    position: absolute;
+    margin-top: 20px;
+}
+#nav #header #wrap #menu_clear::before{
+    transform: rotate(-45deg);
+}
+#nav #header #wrap #menu_clear::after{
+    transform: rotate(45deg);
+}
+/* -----hover----- */
+#nav #header #wrap .clear_wrap:hover #menu_clear::before,
+#nav #header #wrap .clear_wrap:active #menu_clear::before,
+#nav #header #wrap .clear_wrap:hover #menu_clear::after,
+#nav #header #wrap .clear_wrap:active #menu_clear::after{
+    background-color: #e9da85;
+    height: 2px;
+}
+
+#nav #menu_txt{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+}
+#nav #menu_txt ol{
+    margin-bottom: 40px;
+}
+#nav #menu_txt ol span.normal{
+    margin-right: 25px;
+}   
+#nav #menu_txt ol .triangle{
+    background-color: var(--white);
+}
+#nav #menu_txt ol .triangle::after{
+    border-top: 8px solid var(--white);
+}
+/* -----hover----- */
+#nav #menu_txt ol:hover a span,
+#nav #menu_txt ol:active a span{
+    color: #e9da85;
+}
+#nav #menu_txt ol:hover a span.triangle,
+#nav #menu_txt ol:active a span.triangle{
+    background-color: #e9da85;
+    transform: translateX(10px);
+}
+#nav #menu_txt ol:hover a span.triangle::after,
+#nav #menu_txt ol:active a span.triangle::after{
+    border-top: 8px solid #e9da85;
+}
+
+#nav #card{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+}
+#nav #card::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 125px;
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+}
+#nav #card p{
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+#nav #card p:nth-child(3){
+    margin-top: 25px;
+}
+
+
+/* ----------Works_brand Page---------- */
+#works{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#works ul{
+    float: right;
+}
+#works ul ol{
+    float: left;
+    margin-left: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+#empty{
+    height: 170px;
+}
+
+#content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#content #sub_nav{
+    margin-left: 6.3%;
+}
+#content #sub_nav p{
+    margin-bottom: 5px;
+}
+#content #sub_nav ul{
+    border-top: 0.03rem solid var(--lgray);
+    border-bottom: 0.03rem solid var(--lgray);
+}
+#content #sub_nav ul li{
+    margin: 30px 0;
+}
+#content #works_content{
+    width: 78%;
+}
+#content #works_content .name{
+    border-bottom: 0.03rem solid var(--lgray);
+    padding-bottom: 5px;
+}
+#content #works_content .wrap{
+    margin-top: 20px;
+}
+#content #works_content .wrap .intro p:nth-child(1){
+    font-size: 18px;
+    line-height: 29px;
+    margin-top: 20px;
+}
+#content #works_content .wrap .intro p:nth-child(2){
+    margin-top: 10px;
+}
+#content #works_content .wrap .img{
+    column-count: 3;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+#content #works_content .wrap .img .container img{
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+}
+
+
+/* ----------Works_graphic Page---------- */
+#content #works_content .wrap .selected{
+    display: flex;
+    position: relative;
+    z-index: 100;
+}
+#content #works_content .wrap .selected li{
+    margin-right: 10%;
+}
+
+
+/* ----------Works_graphic Page---------- */
+/* -----Works_phonecase----- */
+#content #works_content .wrap .img2{
+    width: 100%;
+    margin-top: 15px;
+}
+#content #works_content .wrap .img2 .container img{
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    object-fit: cover;
+}
+
+
+
+/* ----------Works_UI Page---------- */
+#content #works_content .wrap .img3{
+    column-count: 2;
+    column-gap: 15px;
+    margin-top: -20px;
+}
+#content #works_content .wrap .img3 .container img{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    object-fit: cover;
+}
+#content #works_content .wrap .img3 .container p{
+    text-align: center;
+    margin-top: 15px;
+}
